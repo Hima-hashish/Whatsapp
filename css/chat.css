@@ -1,0 +1,256 @@
+/* Start Global Rules */
+html {
+    background-color: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121b22;
+    max-width: 450px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+}
+
+/* End Global Rules */
+
+/* Start Header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #1f2c34;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a i {
+    font-size: 20px;
+}
+
+header .info {
+    display: flex;
+}
+
+header .info img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+header .info .text {
+    margin-left: 15px;
+}
+
+header .info .text h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+header .info .text p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+header .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-right: 2px;
+}
+
+header .icons i {
+    font-size: 20px;
+}
+
+/* End Header */
+/* Start Content */
+/* Start Body */
+main {
+    height: 85vh;
+}
+
+main .body p:first-child {
+    background-color: #1c272d;
+    color: #76838a;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+main .body p.end {
+    color: #b19f73;
+    background-color: #1c272d;
+    width: 307px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.2;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+/* Start Text */
+
+main .text p {
+    text-align: right;
+    position: relative;
+    color: white;
+    background: #005d4b;
+    padding: 10px;
+    margin-right: 7%;
+    margin-left: 50%;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+main .text p:nth-child(2) {
+    text-align: left;
+    margin-right: 50%;
+    margin-left: 7%;
+    background-color: #202c33;
+}
+
+main .text p:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #202c33 #202c33 transparent transparent;
+    z-index: -1;
+    top: 0px;
+    left: -10px;
+    margin-right: 100%;
+    border-radius: 3px;
+
+}
+
+main .text p span {
+    font-size: 10px;
+}
+
+main .text p span.i {
+    bottom: -10px;
+    color: #e70d0d;
+    position: absolute;
+    font-size: 15px;
+    right: 15px;
+    background: black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 1.4;
+    border-radius: 50%;
+}
+
+main .text p:nth-child(2) span {
+    margin-left: 65%;
+}
+
+main .text p i {
+    color: #55b6c5;
+}
+
+main .text p i.gray {
+    color: #85939e;
+}
+
+main .text p::before {
+    position: absolute;
+    content: "";
+    border-color: #005d4b transparent transparent #005d4b;
+    border-width: 10px;
+    border-style: solid;
+    right: -8px;
+    top: 0px;
+    border-radius: 3px;
+    z-index: -2;
+}
+
+/* End Text */
+
+/* End Body */
+footer {
+    position: relative;
+    margin: 0 10px;
+}
+
+footer::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f118 ";
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    font-size: 23px;
+    color: #85939e;
+}
+
+footer::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0c6 ";
+    position: absolute;
+    left: 65%;
+    bottom: 7px;
+    font-size: 23px;
+    color: #85939e;
+
+}
+
+footer input {
+    height: 35px;
+    width: 75%;
+    border-radius: 30px;
+    border: none;
+    padding-left: 40px;
+    background-color: #1f2c34;
+    color: #85939e;
+}
+
+footer input:focus {
+    outline: 1px solid gray;
+}
+
+footer .recorde {
+    width: 30px;
+    background: #00a884;
+    color: white;
+    height: 30px;
+    text-align: center;
+    padding: 4px;
+    line-height: 1.6;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-left: 3%;
+}
+
+footer .recorde::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f030 ";
+    position: absolute;
+    right: 18%;
+    font-size: 22px;
+    color: #85939e;
+
+}
+
+/* End Content */
