@@ -12,7 +12,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    
+        height: 100vh;
 }
 
 /* End Global Rules */
@@ -79,7 +79,7 @@ header .icons i {
 /* Start Content */
 /* Start Body */
 main {
-    height: 85vh;
+    height: 82vh;
 }
 
 main .body p:first-child {
